@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer 1 - The First US Satellite</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .top-menu {
+            background: #222;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .top-menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .logo {
+            height: 40px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-menu">
+        <a href="index.html">← Back to Home</a>
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="content">
+        <h2>Explorer 1 - The First US Satellite</h2>
+        <img src="photos/206621main_pic.jpg" alt="Explorer 1 Satellite">
+        <p>
+            <strong>Explorer 1</strong> was the first satellite launched by the United States on January 31, 1958.
+            It was developed by the Jet Propulsion Laboratory (JPL) and marked the US entry into the Space Race.
+        </p>
+        <p>
+            The satellite carried a cosmic ray detector, which helped discover the <strong>Van Allen Radiation Belts</strong>,
+            a major milestone in space science. It operated for nearly four months before ceasing transmission on May 23, 1958.
+        </p>
+        <p>
+            <strong>Specifications:</strong>
+            <ul>
+                <li>Launch Date: January 31, 1958</li>
+                <li>Launch Vehicle: Juno I</li>
+                <li>Mass: 13.37 kg</li>
+                <li>Orbit: Low Earth Orbit (LEO)</li>
+                <li>Instruments: Cosmic Ray Detector</li>
+            </ul>
+        </p>
+        <h3>3D Model of Explorer 1</h3>
+        <model-viewer src="3d/Explorer_1.glb" alt="3D Model of Explorer 1" auto-rotate camera-controls background-color="#1e1e1e" style="width: 100%; height: 500px;"></model-viewer>
+    </div>
+
+</body>
+</html>
