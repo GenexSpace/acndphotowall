@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAM – THE FIRST HOMINID IN SPACE (1961)</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-menu">
+        <a href="index.html">← Back to Home</a>
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="content">
+        <h2>HAM – THE FIRST HOMINID IN SPACE (1961)</h2>
+        <img src="placeholder.png" alt="Ham the Chimpanzee in Mercury Capsule" onclick="openLightbox(this.src)">
+        <p>
+            On January 31, 1961, a chimpanzee named <strong>Ham</strong> became the first hominid to travel into space, paving the way for human spaceflight. 
+            He flew aboard the <strong>Mercury-Redstone 2</strong> capsule as part of NASA's Project Mercury, designed to test whether living beings could survive and perform tasks in space.
+        </p>
+        <p>
+            Ham was trained to push levers in response to light cues, proving that astronauts could work in microgravity. 
+            The mission lasted just over 16 minutes and reached an altitude of 252,000 feet (approximately 76.8 km). 
+            Although the capsule landed slightly off course in the Atlantic Ocean, Ham was recovered safely and became an iconic symbol of early space exploration.
+        </p>
+        <p>
+            His successful flight provided the confidence needed to move forward with the first human spaceflights, including Alan Shepard’s suborbital mission just a few months later.
+        </p>
+
+        <h3>Specifications and Facts:</h3>
+        <div class="specifications">
+            <div><span><strong>Flight Date:</strong></span><span>January 31, 1961</span></div>
+            <div><span><strong>Species:</strong></span><span>Chimpanzee (Pan troglodytes)</span></div>
+            <div><span><strong>Mission:</strong></span><span>Mercury-Redstone 2</span></div>
+            <div><span><strong>Duration:</strong></span><span>16.5 minutes</span></div>
+            <div><span><strong>Peak Altitude:</strong></span><span>252,000 feet (76.8 km)</span></div>
+            <div><span><strong>Legacy:</strong></span><span>Paved the way for human spaceflight</span></div>
+        </div>
+        
+        <h3>Image Gallery</h3>
+        <div class="slider">
+            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
+        </div>
+        
+        <h3>3D Model of Mercury Capsule</h3>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model of Mercury Capsule" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Genex Space</p>
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById("lightbox-img").src = src;
+            document.getElementById("lightbox").style.display = "flex";
+        }
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

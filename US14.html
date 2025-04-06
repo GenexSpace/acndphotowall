@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATURN V</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-menu">
+        <a href="index.html">← Back to Home</a>
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="content">
+        <h2>SATURN V</h2>
+        <img src="placeholder.png" alt="Saturn V Launch" onclick="openLightbox(this.src)">
+        <p>
+            The <strong>Saturn V</strong> rocket was developed by NASA under the direction of aerospace engineer Wernher von Braun for the Apollo and Skylab programs from 1967 until 1973. 
+            Standing 110.6 meters (363 feet) tall and weighing approximately 2,970,000 kilograms (6,540,000 pounds), it remains the tallest, heaviest, and most powerful rocket ever flown operationally.
+        </p>
+        <p>
+            The rocket had three stages. The first stage burned kerosene and liquid oxygen to produce immense thrust, lifting the rocket through the dense lower atmosphere. 
+            The second stage used liquid hydrogen and liquid oxygen, carrying the spacecraft further into orbit. 
+            The third stage propelled astronauts out of Earth's orbit and toward the Moon.
+        </p>
+        <p>
+            Saturn V successfully carried astronauts to the Moon six times between 1969 and 1972, including the famous Apollo 11 mission, where Neil Armstrong and Buzz Aldrin became the first humans to walk on the lunar surface. 
+            The rocket also launched Skylab, America's first space station, demonstrating its versatile capability.
+        </p>
+        
+        <h3>Specifications:</h3>
+        <div class="specifications">
+            <div><span><strong>Height:</strong></span><span>110.6 m (363 ft)</span></div>
+            <div><span><strong>Diameter:</strong></span><span>10.1 m (33 ft)</span></div>
+            <div><span><strong>Mass:</strong></span><span>2,970,000 kg (6,540,000 lb)</span></div>
+            <div><span><strong>Stages:</strong></span><span>3</span></div>
+            <div><span><strong>Payload to Moon:</strong></span><span>48,600 kg (107,100 lb)</span></div>
+            <div><span><strong>Number of Launches:</strong></span><span>13 (1967–1973)</span></div>
+            <div><span><strong>Notable Missions:</strong></span><span>Apollo 11, Apollo 12, Apollo 13, Skylab</span></div>
+        </div>
+        
+        <h3>Image Gallery</h3>
+        <div class="slider">
+            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
+        </div>
+        
+        <h3>3D Model of Saturn V</h3>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model of Saturn V" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Genex Space</p>
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById("lightbox-img").src = src;
+            document.getElementById("lightbox").style.display = "flex";
+        }
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

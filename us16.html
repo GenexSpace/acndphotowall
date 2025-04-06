@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EARTH’S FIRST SNAPSHOT FROM SPACE (1946)</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-menu">
+        <a href="index.html">← Back to Home</a>
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="content">
+        <h2>EARTH’S FIRST SNAPSHOT FROM SPACE (1946)</h2>
+        <img src="placeholder.png" alt="Earth’s First Snapshot from Space" onclick="openLightbox(this.src)">
+        <p>
+            On October 24, 1946, humans captured the very first photograph of Earth from space. 
+            Taken by a V-2 rocket launched from White Sands Missile Range in New Mexico, this historic image provided humanity's first perspective of our planet as seen from beyond the Earth's atmosphere.
+        </p>
+        <p>
+            Clyde Holliday, the engineer who developed the camera system, noted in National Geographic that the photograph showed "how our Earth would look to visitors from another planet coming in on a spaceship," forever altering our understanding of our home planet and our place in the universe.
+        </p>
+        <p>
+            This milestone was foundational for the future of space photography and Earth observation, demonstrating the immense scientific and symbolic value of viewing Earth from space.
+        </p>
+        
+        <h3>Specifications and Facts:</h3>
+        <div class="specifications">
+            <div><span><strong>Date Captured:</strong></span><span>October 24, 1946</span></div>
+            <div><span><strong>Location:</strong></span><span>White Sands Missile Range, New Mexico, USA</span></div>
+            <div><span><strong>Rocket Used:</strong></span><span>V-2 rocket</span></div>
+            <div><span><strong>Altitude:</strong></span><span>Approximately 105 km (65 miles)</span></div>
+            <div><span><strong>Camera Developer:</strong></span><span>Clyde Holliday</span></div>
+            <div><span><strong>Historical Significance:</strong></span><span>First photograph of Earth from space</span></div>
+        </div>
+        
+        <h3>Image Gallery</h3>
+        <div class="slider">
+            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
+            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
+        </div>
+        
+        <h3>3D Model</h3>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model Placeholder" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Genex Space</p>
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById("lightbox-img").src = src;
+            document.getElementById("lightbox").style.display = "flex";
+        }
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

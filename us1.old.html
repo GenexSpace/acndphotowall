@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer 1 - The First US Satellite</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-menu">
+        <a href="index.html">← Back to Home</a>
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="content">
+        <h2>Explorer 1 - The First US Satellite</h2>
+        <img src="photos/206621main_pic.jpg" alt="Explorer 1 Satellite" onclick="openLightbox(this.src)">
+        <p>
+            <strong>Explorer 1</strong> was the first satellite launched by the United States on January 31, 1958.
+            It was developed by the Jet Propulsion Laboratory (JPL) and marked the US entry into the Space Race.
+        </p>
+        <p>
+            The satellite carried a cosmic ray detector, which helped discover the <strong>Van Allen Radiation Belts</strong>,
+            a major milestone in space science. It operated for nearly four months before ceasing transmission on May 23, 1958.
+        </p>
+        <h3>Specifications:</h3>
+        <div class="specifications">
+            <div><span><strong>Launch Date:</strong></span><span>January 31, 1958</span></div>
+            <div><span><strong>Launch Vehicle:</strong></span><span>Juno I</span></div>
+            <div><span><strong>Mass:</strong></span><span>13.37 kg</span></div>
+            <div><span><strong>Orbit:</strong></span><span>Low Earth Orbit (LEO)</span></div>
+            <div><span><strong>Instruments:</strong></span><span>Cosmic Ray Detector</span></div>
+        </div>
+        <h3>Image Gallery</h3>
+        <div class="slider">
+            <img src="photos/explorer1_1.jpg" alt="Explorer 1 Image 1" onclick="openLightbox(this.src)">
+            <img src="photos/explorer1_2.jpg" alt="Explorer 1 Image 2" onclick="openLightbox(this.src)">
+            <img src="photos/explorer1_3.jpg" alt="Explorer 1 Image 3" onclick="openLightbox(this.src)">
+            <img src="photos/explorer1_4.jpg" alt="Explorer 1 Image 4" onclick="openLightbox(this.src)">
+            <img src="photos/explorer1_5.jpg" alt="Explorer 1 Image 5" onclick="openLightbox(this.src)">
+        </div>
+        <h3>3D Model of Explorer 1</h3>
+        <model-viewer src="3d/Explorer_1.glb" alt="3D Model of Explorer 1" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Genex Space</p>
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById("lightbox-img").src = src;
+            document.getElementById("lightbox").style.display = "flex";
+        }
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
