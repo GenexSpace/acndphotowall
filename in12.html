@@ -2,57 +2,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A SATELLITE ON A BULLOCK CART</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ADITYA-L1 – SOLAR MISSION TO STUDY THE SUN</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .section {
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 1rem;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    .section h3 {
+      margin-top: 0;
+      color: #ffcc00;
+    }
+    .section p {
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
+  <div class="top-menu">
+    <a href="index.html">← Back to Home</a>
+    <img src="logo.png" alt="Logo" class="logo" />
+  </div>
 
-    <div class="top-menu">
-        <a href="index.html">← Back to Home</a>
-        <img src="logo.png" alt="Logo" class="logo">
+  <div class="content">
+    <h2 style="text-align:center">ADITYA-L1 – SOLAR MISSION TO STUDY THE SUN</h2>
+    <div class="section">
+      <img src="photos/preview/in12.jpg" alt="ADITYA-L1 – SOLAR MISSION TO STUDY THE SUN" style="width:100%; border-radius: 6px;" />
+    </div>
+    <div class="section">
+      Aditya-L1 is India’s first solar observatory, positioned at the Lagrange Point 1 to study solar weather and flares.<br><br><h3>Mission Specs:</h3>
+<ul>
+  <li>Launch: September 2, 2023</li>
+  <li>Orbit: Halo orbit around L1</li>
+  <li>Payloads: 7 instruments</li>
+</ul>
     </div>
 
-    <div class="content">
-        <h2>A SATELLITE ON A BULLOCK CART</h2>
-        <img src="placeholder.png" alt="A SATELLITE ON A BULLOCK CART" onclick="openLightbox(this.src)">
-        <p>In 1981, India transported its APPLE communication satellite on a bullock cart as part of antenna testing. The unusual method was used to avoid magnetic interference from vehicles.
-
-The image became iconic, symbolizing India’s humble yet determined space journey. APPLE was India’s first experimental geostationary satellite and laid the foundation for INSAT.</p>
-
-        <h3>Image Gallery</h3>
-        <div class="slider">
-            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
-        </div>
-
-        <h3>Video</h3>
-        <div class="video-container">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div class="section">
+      <h3>Image Gallery</h3>
+      <div class="slider">
+        <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)" />
+      </div>
     </div>
 
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
+    <div class="section">
+      <h3>Video</h3>
+      <div class="video-container">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
+  </div>
 
-    <div class="footer">
-        <p>&copy; 2025 Genex Space</p>
-    </div>
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" />
+  </div>
 
-    <script>
-        function openLightbox(src) {
-            document.getElementById("lightbox-img").src = src;
-            document.getElementById("lightbox").style.display = "flex";
-        }
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
+  <div class="footer">
+    <p>&copy; 2025 Genex Space</p>
+  </div>
 
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox-img").src = src;
+      document.getElementById("lightbox").style.display = "flex";
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
 </body>
 </html>

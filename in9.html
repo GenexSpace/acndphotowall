@@ -2,57 +2,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSAT – TRANSFORMING INDIA’S COMMUNICATION (1983–PRESENT)</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ASTROSAT – INDIA’S FIRST SPACE OBSERVATORY</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .section {
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 1rem;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    .section h3 {
+      margin-top: 0;
+      color: #ffcc00;
+    }
+    .section p {
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
+  <div class="top-menu">
+    <a href="index.html">← Back to Home</a>
+    <img src="logo.png" alt="Logo" class="logo" />
+  </div>
 
-    <div class="top-menu">
-        <a href="index.html">← Back to Home</a>
-        <img src="logo.png" alt="Logo" class="logo">
+  <div class="content">
+    <h2 style="text-align:center">ASTROSAT – INDIA’S FIRST SPACE OBSERVATORY</h2>
+    <div class="section">
+      <img src="photos/preview/in9.jpg" alt="ASTROSAT – INDIA’S FIRST SPACE OBSERVATORY" style="width:100%; border-radius: 6px;" />
+    </div>
+    <div class="section">
+      Astrosat is India’s first dedicated multi-wavelength space observatory for astronomy research across the electromagnetic spectrum.<br><br><h3>Technical Info:</h3>
+<ul>
+  <li>Launch Date: Sept 28, 2015</li>
+  <li>Orbit: Low Earth Orbit</li>
+  <li>Payloads: UVIT, SXT, LAXPC</li>
+</ul>
     </div>
 
-    <div class="content">
-        <h2>INSAT – TRANSFORMING INDIA’S COMMUNICATION (1983–PRESENT)</h2>
-        <img src="placeholder.png" alt="INSAT – TRANSFORMING INDIA’S COMMUNICATION (1983–PRESENT)" onclick="openLightbox(this.src)">
-        <p>The Indian National Satellite System (INSAT) is a series of multipurpose geostationary satellites used for telecommunications, broadcasting, weather forecasting, and disaster warning.
-
-Since its inception in 1983, INSAT has enabled mobile and satellite TV, cyclone tracking, and rural connectivity, transforming the socio-economic landscape of India.</p>
-
-        <h3>Image Gallery</h3>
-        <div class="slider">
-            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
-        </div>
-
-        <h3>Video</h3>
-        <div class="video-container">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div class="section">
+      <h3>Image Gallery</h3>
+      <div class="slider">
+        <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)" />
+      </div>
     </div>
 
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
+    <div class="section">
+      <h3>Video</h3>
+      <div class="video-container">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
+  </div>
 
-    <div class="footer">
-        <p>&copy; 2025 Genex Space</p>
-    </div>
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" />
+  </div>
 
-    <script>
-        function openLightbox(src) {
-            document.getElementById("lightbox-img").src = src;
-            document.getElementById("lightbox").style.display = "flex";
-        }
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
+  <div class="footer">
+    <p>&copy; 2025 Genex Space</p>
+  </div>
 
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox-img").src = src;
+      document.getElementById("lightbox").style.display = "flex";
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
 </body>
 </html>

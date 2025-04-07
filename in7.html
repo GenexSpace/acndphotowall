@@ -2,57 +2,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RLV-TD – INDIA’S SPACE SHUTTLE PROTOTYPE (2016)</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MANGALYAAN – MARS ORBITER MISSION (2013)</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .section {
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 1rem;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    .section h3 {
+      margin-top: 0;
+      color: #ffcc00;
+    }
+    .section p {
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
+  <div class="top-menu">
+    <a href="index.html">← Back to Home</a>
+    <img src="logo.png" alt="Logo" class="logo" />
+  </div>
 
-    <div class="top-menu">
-        <a href="index.html">← Back to Home</a>
-        <img src="logo.png" alt="Logo" class="logo">
+  <div class="content">
+    <h2 style="text-align:center">MANGALYAAN – MARS ORBITER MISSION (2013)</h2>
+    <div class="section">
+      <img src="photos/preview/in7.jpg" alt="MANGALYAAN – MARS ORBITER MISSION (2013)" style="width:100%; border-radius: 6px;" />
+    </div>
+    <div class="section">
+      Mangalyaan (Mars Orbiter Mission) made India the first Asian country to reach Mars orbit and the first to do so in its maiden attempt.<br><br><h3>Mission Specs:</h3>
+<ul>
+  <li>Launch Date: November 5, 2013</li>
+  <li>Orbit: Mars</li>
+  <li>Payloads: 5 scientific instruments</li>
+  <li>Cost: $74 million</li>
+</ul>
     </div>
 
-    <div class="content">
-        <h2>RLV-TD – INDIA’S SPACE SHUTTLE PROTOTYPE (2016)</h2>
-        <img src="placeholder.png" alt="RLV-TD – INDIA’S SPACE SHUTTLE PROTOTYPE (2016)" onclick="openLightbox(this.src)">
-        <p>The Reusable Launch Vehicle – Technology Demonstrator (RLV-TD) was India’s first step toward developing a reusable space shuttle.
-
-Launched in 2016, it demonstrated hypersonic flight, autonomous landing, and re-entry technology. The winged body prototype resembled a small-scale spaceplane and was part of ISRO's long-term vision of reducing launch costs and enabling frequent access to space.</p>
-
-        <h3>Image Gallery</h3>
-        <div class="slider">
-            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
-        </div>
-
-        <h3>Video</h3>
-        <div class="video-container">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div class="section">
+      <h3>Image Gallery</h3>
+      <div class="slider">
+        <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)" />
+      </div>
     </div>
 
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
+    <div class="section">
+      <h3>Video</h3>
+      <div class="video-container">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
+  </div>
 
-    <div class="footer">
-        <p>&copy; 2025 Genex Space</p>
-    </div>
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" />
+  </div>
 
-    <script>
-        function openLightbox(src) {
-            document.getElementById("lightbox-img").src = src;
-            document.getElementById("lightbox").style.display = "flex";
-        }
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
+  <div class="footer">
+    <p>&copy; 2025 Genex Space</p>
+  </div>
 
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox-img").src = src;
+      document.getElementById("lightbox").style.display = "flex";
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
 </body>
 </html>

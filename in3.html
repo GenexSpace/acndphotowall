@@ -2,68 +2,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MANGALYAAN – FIRST MARS MISSION (2014)</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>APPLE – EXPERIMENTAL COMMUNICATION SATELLITE</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .section {
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 1rem;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    .section h3 {
+      margin-top: 0;
+      color: #ffcc00;
+    }
+    .section p {
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
+  <div class="top-menu">
+    <a href="index.html">← Back to Home</a>
+    <img src="logo.png" alt="Logo" class="logo" />
+  </div>
 
-    <div class="top-menu">
-        <a href="index.html">← Back to Home</a>
-        <img src="logo.png" alt="Logo" class="logo">
+  <div class="content">
+    <h2 style="text-align:center">APPLE – EXPERIMENTAL COMMUNICATION SATELLITE</h2>
+    <div class="section">
+      <img src="photos/preview/in3.jpg" alt="APPLE – EXPERIMENTAL COMMUNICATION SATELLITE" style="width:100%; border-radius: 6px;" />
+    </div>
+    <div class="section">
+      APPLE, launched in 1981, served as an experimental communication satellite and paved the way for the INSAT series.<br><br><h3>Technical Details:</h3>
+<ul>
+  <li>Launch Date: June 19, 1981</li>
+  <li>Mass: 670 kg</li>
+  <li>Orbit: Geostationary Transfer Orbit (GTO)</li>
+  <li>Launch Vehicle: Ariane 1 (France)</li>
+</ul>
     </div>
 
-    <div class="content">
-        <h2>MANGALYAAN – FIRST MARS MISSION (2014)</h2>
-        <img src="placeholder.png" alt="MANGALYAAN – FIRST MARS MISSION (2014)" onclick="openLightbox(this.src)">
-        <p>The Mars Orbiter Mission (Mangalyaan), launched on November 5, 2013, became India's first interplanetary mission and the world's most cost-effective Mars mission.
-
-It entered Martian orbit on September 24, 2014, and provided valuable data on Mars' atmosphere and surface features. It operated for over seven years.
-
-<b>Orbital Details:</b><br>
-- Mars Orbit: Elliptical (423 x 80,000 km)<br>
-- Inclination: 150°<br>
-- Orbital Period: ~72 hours<br>
-
-<b>Technical Specifications:</b><br>
-- Launch Mass: 1,337 kg<br>
-- Power: 840 W solar panels<br>
-- Communication: 2.2 m high-gain antenna<br>
-- Payloads: Methane Sensor, Mars Color Camera, Thermal IR Spectrometer, Lyman Alpha Photometer</p>
-
-        <h3>Image Gallery</h3>
-        <div class="slider">
-            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
-        </div>
-
-        <h3>Video</h3>
-        <div class="video-container">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div class="section">
+      <h3>Image Gallery</h3>
+      <div class="slider">
+        <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)" />
+        <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)" />
+      </div>
     </div>
 
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
+    <div class="section">
+      <h3>Video</h3>
+      <div class="video-container">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
+  </div>
 
-    <div class="footer">
-        <p>&copy; 2025 Genex Space</p>
-    </div>
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" />
+  </div>
 
-    <script>
-        function openLightbox(src) {
-            document.getElementById("lightbox-img").src = src;
-            document.getElementById("lightbox").style.display = "flex";
-        }
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
+  <div class="footer">
+    <p>&copy; 2025 Genex Space</p>
+  </div>
 
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox-img").src = src;
+      document.getElementById("lightbox").style.display = "flex";
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
 </body>
 </html>
