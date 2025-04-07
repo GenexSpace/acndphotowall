@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOYAGER 1 & 2 – EXPLORING THE OUTER SOLAR SYSTEM (1977)</title>
+    <title>Voyager 1 & 2 – Exploring the Outer Solar System (1977)</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="top-menu">
@@ -15,30 +17,17 @@
         <img src="logo.png" alt="Logo" class="logo">
     </div>
 
-    <div class="content">
-        <h2>VOYAGER 1 & 2 – EXPLORING THE OUTER SOLAR SYSTEM (1977)</h2>
-        <img src="placeholder.png" alt="Voyager Spacecraft" onclick="openLightbox(this.src)">
-        <p>
-            <strong>Voyager 1 and 2</strong> were launched in 1977 as part of NASA’s effort to explore the outer planets of our Solar System.
-            These spacecraft delivered the first detailed images and data from Jupiter, Saturn, Uranus, and Neptune.
-        </p>
-        <p>
-            Voyager 1, now the farthest human-made object from Earth, captured the iconic <strong>Pale Blue Dot</strong> image of Earth from 6 billion kilometers away, offering a humbling perspective of our planet.
-            Voyager 2 remains the only spacecraft to have visited all four gas giants.
-        </p>
-        <p>
-            Both spacecraft are now in interstellar space, continuing to send back data and carrying the <strong>Golden Record</strong> — a time capsule of Earth’s culture and sounds — for any extraterrestrial life that may one day encounter it.
-        </p>
+    <div class="content dark-box">
+        <h2>Voyager 1 & 2 – Exploring the Outer Solar System (1977)</h2>
+        <img src="photos/preview/us3.jpg" alt="Voyager 1 & 2 – Exploring the Outer Solar System (1977)" onclick="openLightbox(this.src)">
+        <p>Voyager spacecraft continue to send data from interstellar space decades after launch.</p>
+        <p>Launched in 1977, they carry messages from Earth aboard the Golden Record.</p>
 
-        <h3>Specifications and Facts:</h3>
+        <h3>Specifications:</h3>
         <div class="specifications">
-            <div><span><strong>Launch Year:</strong></span><span>1977</span></div>
-            <div><span><strong>Primary Targets:</strong></span><span>Jupiter, Saturn, Uranus (Voyager 2), Neptune (Voyager 2)</span></div>
-            <div><span><strong>Status:</strong></span><span>Active – in Interstellar Space</span></div>
-            <div><span><strong>Famous Image:</strong></span><span>Pale Blue Dot (Voyager 1)</span></div>
-            <div><span><strong>Onboard Message:</strong></span><span>Golden Record (music, greetings, images)</span></div>
+            <div><span><strong>Launch:</strong></span><span>1977</span></div><div><span><strong>Status:</strong></span><span>Interstellar space</span></div><div><span><strong>Instruments:</strong></span><span>Plasma, Imaging</span></div>
         </div>
-        
+
         <h3>Image Gallery</h3>
         <div class="slider">
             <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
@@ -47,9 +36,14 @@
             <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
             <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
         </div>
-        
-        <h3>3D Model of Voyager Spacecraft</h3>
-        <model-viewer src="3d-placeholder.glb" alt="3D Model of Voyager Spacecraft" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>3D Model</h3>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>Video</h3>
+        <div class="video-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">

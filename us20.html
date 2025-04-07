@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WERNHER VON BRAUN – PIONEER OF ROCKETRY</title>
+    <title>Wernher von Braun – Rocket Visionary</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="top-menu">
@@ -15,30 +17,17 @@
         <img src="logo.png" alt="Logo" class="logo">
     </div>
 
-    <div class="content">
-        <h2>WERNHER VON BRAUN – PIONEER OF ROCKETRY</h2>
-        <img src="placeholder.png" alt="Wernher von Braun at NASA" onclick="openLightbox(this.src)">
-        <p>
-            <strong>Wernher von Braun</strong> was one of the most influential rocket engineers in history. Born in Germany in 1912, he led the development of the V-2 rocket during World War II.
-            After the war, von Braun was brought to the United States under Operation Paperclip, where he played a critical role in the U.S. space program.
-        </p>
-        <p>
-            As the director of NASA's Marshall Space Flight Center, he was the chief architect of the <strong>Saturn V</strong> rocket, which successfully carried Apollo astronauts to the Moon. 
-            His vision and leadership turned the dream of lunar exploration into a reality and laid the foundation for modern space exploration.
-        </p>
-        <p>
-            Von Braun was a passionate advocate for space science and education, inspiring generations to look toward the stars. His legacy lives on in every rocket that ventures beyond our planet.
-        </p>
+    <div class="content dark-box">
+        <h2>Wernher von Braun – Rocket Visionary</h2>
+        <img src="photos/preview/us20.jpg" alt="Wernher von Braun – Rocket Visionary" onclick="openLightbox(this.src)">
+        <p>Wernher von Braun helped lead America’s space program to the Moon.</p>
+        <p>His vision and engineering led to the creation of the Saturn V rocket.</p>
 
-        <h3>Biography Highlights:</h3>
+        <h3>Specifications:</h3>
         <div class="specifications">
-            <div><span><strong>Born:</strong></span><span>March 23, 1912 – Wirsitz, Germany</span></div>
-            <div><span><strong>Died:</strong></span><span>June 16, 1977 – Alexandria, Virginia, USA</span></div>
-            <div><span><strong>Key Contributions:</strong></span><span>V-2 Rocket, Saturn V, Apollo Program</span></div>
-            <div><span><strong>NASA Role:</strong></span><span>Director, Marshall Space Flight Center (1960–1970)</span></div>
-            <div><span><strong>Legacy:</strong></span><span>Architect of Apollo Moon missions</span></div>
+            <div><span><strong>Role:</strong></span><span>Director, MSFC</span></div><div><span><strong>Legacy:</strong></span><span>Saturn V, Apollo</span></div>
         </div>
-        
+
         <h3>Image Gallery</h3>
         <div class="slider">
             <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
@@ -47,9 +36,14 @@
             <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
             <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
         </div>
-        
+
         <h3>3D Model</h3>
-        <model-viewer src="3d-placeholder.glb" alt="3D Model of Rocket Development" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>Video</h3>
+        <div class="video-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">

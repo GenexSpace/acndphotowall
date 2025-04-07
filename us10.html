@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPACEX – REUSABLE ROCKETS (2008–PRESENT)</title>
+    <title>SpaceX – Reusable Rockets (2008–Present)</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="top-menu">
@@ -15,14 +17,16 @@
         <img src="logo.png" alt="Logo" class="logo">
     </div>
 
-    <div class="content">
-        <h2>SPACEX – REUSABLE ROCKETS (2008–PRESENT)</h2>
-        <img src="placeholder.png" alt="SPACEX – REUSABLE ROCKETS (2008–PRESENT)" onclick="openLightbox(this.src)">
-        <p>Founded in 2002 by Elon Musk, SpaceX revolutionized the aerospace industry with its reusable rocket technology. In 2015, it became the first private company to land a rocket booster (Falcon 9) vertically after launch.
+    <div class="content dark-box">
+        <h2>SpaceX – Reusable Rockets (2008–Present)</h2>
+        <img src="photos/preview/us10.jpg" alt="SpaceX – Reusable Rockets (2008–Present)" onclick="openLightbox(this.src)">
+        <p>SpaceX changed the game with reusable rockets and commercial spaceflight.</p>
+        <p>Their rockets land vertically and are reused for multiple flights.</p>
 
-This innovation drastically reduced launch costs, enabling more frequent and affordable access to space. SpaceX now regularly sends cargo and astronauts to the ISS, and its <strong>Starlink</strong> constellation provides internet globally.
-
-The company’s vision includes interplanetary travel through <strong>Starship</strong>, aiming to make humans a multiplanetary species.</p>
+        <h3>Specifications:</h3>
+        <div class="specifications">
+            <div><span><strong>First Reuse:</strong></span><span>2015</span></div><div><span><strong>Payload:</strong></span><span>22,800 kg</span></div>
+        </div>
 
         <h3>Image Gallery</h3>
         <div class="slider">
@@ -34,7 +38,12 @@ The company’s vision includes interplanetary travel through <strong>Starship</
         </div>
 
         <h3>3D Model</h3>
-        <model-viewer src="3d-placeholder.glb" alt="3D Model of SPACEX – REUSABLE ROCKETS (2008–PRESENT)" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>Video</h3>
+        <div class="video-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">

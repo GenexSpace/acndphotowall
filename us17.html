@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAN ON THE MOON - APOLLO 12 MISSION (1969)</title>
+    <title>Man on the Moon – Apollo 12 (1969)</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="top-menu">
@@ -15,29 +17,17 @@
         <img src="logo.png" alt="Logo" class="logo">
     </div>
 
-    <div class="content">
-        <h2>MAN ON THE MOON - APOLLO 12 MISSION (1969)</h2>
-        <img src="placeholder.png" alt="Astronaut Alan Bean - Apollo 12" onclick="openLightbox(this.src)">
-        <p>
-            The Apollo 12 mission, launched on November 14, 1969, was NASA's second crewed Moon landing, and it further demonstrated humanity's capability to explore extraterrestrial worlds.
-        </p>
-        <p>
-            Astronaut Alan Bean became the fourth human to walk on the Moon, capturing crucial photographs and collecting lunar soil and rock samples for scientific study. In one notable image from the mission, astronaut Charles "Pete" Conrad can be seen reflected in Bean's visor, taking a photograph with a chest-mounted camera similar to Bean’s own.
-        </p>
-        <p>
-            Apollo 12 provided valuable scientific insights and proved the precision landing capabilities required for future lunar missions. The astronauts explored the lunar surface extensively, spending over 31 hours outside the spacecraft during two extravehicular activities (EVAs).
-        </p>
-        
-        <h3>Specifications and Facts:</h3>
+    <div class="content dark-box">
+        <h2>Man on the Moon – Apollo 12 (1969)</h2>
+        <img src="photos/preview/us17.jpg" alt="Man on the Moon – Apollo 12 (1969)" onclick="openLightbox(this.src)">
+        <p>Apollo 12's lunar surface photos captured powerful moments of exploration.</p>
+        <p>Pete Conrad and Alan Bean were the second humans to land on the Moon.</p>
+
+        <h3>Specifications:</h3>
         <div class="specifications">
-            <div><span><strong>Mission Launch Date:</strong></span><span>November 14, 1969</span></div>
-            <div><span><strong>Landing Site:</strong></span><span>Ocean of Storms (Oceanus Procellarum)</span></div>
-            <div><span><strong>Commander:</strong></span><span>Charles "Pete" Conrad</span></div>
-            <div><span><strong>Lunar Module Pilot:</strong></span><span>Alan L. Bean</span></div>
-            <div><span><strong>Duration on Moon:</strong></span><span>31 hours, 31 minutes</span></div>
-            <div><span><strong>Lunar Samples Collected:</strong></span><span>34.35 kilograms (75.7 pounds)</span></div>
+            <div><span><strong>Date:</strong></span><span>1969</span></div><div><span><strong>Mission:</strong></span><span>Apollo 12</span></div>
         </div>
-        
+
         <h3>Image Gallery</h3>
         <div class="slider">
             <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
@@ -46,9 +36,14 @@
             <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
             <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
         </div>
-        
-        <h3>3D Model of Apollo Lunar Module</h3>
-        <model-viewer src="3d-placeholder.glb" alt="3D Model of Apollo Lunar Module" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>3D Model</h3>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>Video</h3>
+        <div class="video-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">

@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA’S PERSEVERANCE – MARS (2021)</title>
+    <title>NASA’s Perseverance – Mars</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="top-menu">
@@ -15,14 +17,16 @@
         <img src="logo.png" alt="Logo" class="logo">
     </div>
 
-    <div class="content">
-        <h2>NASA’S PERSEVERANCE – MARS (2021)</h2>
-        <img src="placeholder.png" alt="NASA’S PERSEVERANCE – MARS (2021)" onclick="openLightbox(this.src)">
-        <p>Launched on July 30, 2020, and landing on Mars on February 18, 2021, NASA’s Perseverance rover explores the Jezero Crater — a location thought to be an ancient river delta. The rover is searching for signs of ancient microbial life and collecting soil samples for future return missions.
+    <div class="content dark-box">
+        <h2>NASA’s Perseverance – Mars</h2>
+        <img src="photos/preview/us6.jpg" alt="NASA’s Perseverance – Mars" onclick="openLightbox(this.src)">
+        <p>Perseverance is NASA's latest rover exploring Mars for signs of ancient life.</p>
+        <p>It carries a drone helicopter and sophisticated instruments to study Martian geology.</p>
 
-Perseverance carries advanced instruments, including SHERLOC and PIXL, to analyze rock textures and chemistry. It also deployed <strong>Ingenuity</strong>, the first helicopter to fly on another planet.
-
-The mission represents a major step in NASA’s Mars Sample Return program and builds on the legacy of previous rovers such as Spirit, Opportunity, and Curiosity.</p>
+        <h3>Specifications:</h3>
+        <div class="specifications">
+            <div><span><strong>Landing:</strong></span><span>2021</span></div><div><span><strong>Power:</strong></span><span>RTG</span></div><div><span><strong>Instruments:</strong></span><span>23 cameras</span></div>
+        </div>
 
         <h3>Image Gallery</h3>
         <div class="slider">
@@ -34,7 +38,12 @@ The mission represents a major step in NASA’s Mars Sample Return program and b
         </div>
 
         <h3>3D Model</h3>
-        <model-viewer src="3d-placeholder.glb" alt="3D Model of NASA’S PERSEVERANCE – MARS (2021)" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>Video</h3>
+        <div class="video-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">

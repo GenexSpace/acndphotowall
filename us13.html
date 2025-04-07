@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LONGEST FEMALE SPACEFLIGHT – SUNITA WILLIAMS</title>
+    <title>Longest Female Spaceflight – Sunita Williams</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="top-menu">
@@ -15,14 +17,16 @@
         <img src="logo.png" alt="Logo" class="logo">
     </div>
 
-    <div class="content">
-        <h2>LONGEST FEMALE SPACEFLIGHT – SUNITA WILLIAMS</h2>
-        <img src="placeholder.png" alt="LONGEST FEMALE SPACEFLIGHT – SUNITA WILLIAMS" onclick="openLightbox(this.src)">
-        <p>Sunita Williams, a NASA astronaut of Indian descent, held the record for the longest single spaceflight by a woman (195 days) and performed seven spacewalks totaling over 50 hours.
+    <div class="content dark-box">
+        <h2>Longest Female Spaceflight – Sunita Williams</h2>
+        <img src="photos/preview/us13.jpg" alt="Longest Female Spaceflight – Sunita Williams" onclick="openLightbox(this.src)">
+        <p>Sunita Williams spent over 322 days in space and completed seven spacewalks.</p>
+        <p>She inspired young women worldwide to pursue STEM and space careers.</p>
 
-She flew on missions aboard the Space Shuttle and Soyuz, serving on the International Space Station twice. Williams is also a U.S. Navy test pilot and continues to contribute to spaceflight programs, including NASA’s Artemis mission planning.
-
-Her journey is an inspiration for future generations, especially women in STEM.</p>
+        <h3>Specifications:</h3>
+        <div class="specifications">
+            <div><span><strong>Time in Space:</strong></span><span>322 days</span></div><div><span><strong>Spacewalks:</strong></span><span>7</span></div>
+        </div>
 
         <h3>Image Gallery</h3>
         <div class="slider">
@@ -34,7 +38,12 @@ Her journey is an inspiration for future generations, especially women in STEM.<
         </div>
 
         <h3>3D Model</h3>
-        <model-viewer src="3d-placeholder.glb" alt="3D Model of LONGEST FEMALE SPACEFLIGHT – SUNITA WILLIAMS" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>Video</h3>
+        <div class="video-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">

@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAMES WEBB SPACE TELESCOPE (2021)</title>
+    <title>James Webb Space Telescope (2021)</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="top-menu">
@@ -15,14 +17,16 @@
         <img src="logo.png" alt="Logo" class="logo">
     </div>
 
-    <div class="content">
-        <h2>JAMES WEBB SPACE TELESCOPE (2021)</h2>
-        <img src="placeholder.png" alt="JAMES WEBB SPACE TELESCOPE (2021)" onclick="openLightbox(this.src)">
-        <p>The James Webb Space Telescope (JWST) is NASA's most advanced space observatory, launched on December 25, 2021. It orbits the Sun at Lagrange Point 2 (L2), nearly 1.5 million kilometers from Earth.
+    <div class="content dark-box">
+        <h2>James Webb Space Telescope (2021)</h2>
+        <img src="photos/preview/us8.jpg" alt="James Webb Space Telescope (2021)" onclick="openLightbox(this.src)">
+        <p>JWST is designed to look deeper into space than any telescope before it.</p>
+        <p>It observes galaxies, stars, and planets in infrared from a distant orbit.</p>
 
-JWST is equipped with a large 6.5-meter mirror and powerful infrared instruments to peer into the earliest stages of the universe. It studies galaxy formation, black holes, exoplanets, and the atmospheres of distant worlds — potentially identifying signs of life.
-
-JWST is considered the successor to the Hubble Space Telescope and has already captured stunning images that redefine our cosmic perspective.</p>
+        <h3>Specifications:</h3>
+        <div class="specifications">
+            <div><span><strong>Launch:</strong></span><span>2021</span></div><div><span><strong>Mirror:</strong></span><span>6.5 m</span></div><div><span><strong>Orbit:</strong></span><span>L2</span></div>
+        </div>
 
         <h3>Image Gallery</h3>
         <div class="slider">
@@ -34,7 +38,12 @@ JWST is considered the successor to the Hubble Space Telescope and has already c
         </div>
 
         <h3>3D Model</h3>
-        <model-viewer src="3d-placeholder.glb" alt="3D Model of JAMES WEBB SPACE TELESCOPE (2021)" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>Video</h3>
+        <div class="video-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">

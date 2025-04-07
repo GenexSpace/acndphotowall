@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APOLLO 11 – FIRST MOON LANDING (1969)</title>
+    <title>Apollo 11 – First Moon Landing (1969)</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="top-menu">
@@ -15,33 +17,17 @@
         <img src="logo.png" alt="Logo" class="logo">
     </div>
 
-    <div class="content">
-        <h2>APOLLO 11 – FIRST MOON LANDING (1969)</h2>
-        <img src="placeholder.png" alt="Neil Armstrong First Step on Moon" onclick="openLightbox(this.src)">
-        <p>
-            On July 20, 1969, <strong>Apollo 11</strong> made history when astronauts <strong>Neil Armstrong</strong> and <strong>Buzz Aldrin</strong> became the first humans to walk on the Moon. 
-            Armstrong’s famous words, “That's one small step for man, one giant leap for mankind,” symbolized a monumental achievement in human history.
-        </p>
-        <p>
-            The mission fulfilled President John F. Kennedy's goal of landing a man on the Moon and returning him safely to Earth before the end of the decade. 
-            The success of Apollo 11 showcased American technological leadership and inspired generations around the world.
-        </p>
-        <p>
-            The lunar module <strong>Eagle</strong> carried the astronauts to the Moon’s surface, while <strong>Michael Collins</strong> remained in orbit aboard the command module <strong>Columbia</strong>. 
-            The team returned to Earth on July 24, 1969, bringing back samples and data that advanced our understanding of the Moon.
-        </p>
+    <div class="content dark-box">
+        <h2>Apollo 11 – First Moon Landing (1969)</h2>
+        <img src="photos/preview/us2.jpg" alt="Apollo 11 – First Moon Landing (1969)" onclick="openLightbox(this.src)">
+        <p>Apollo 11 marked a historic achievement as humans landed on the Moon for the first time.</p>
+        <p>Neil Armstrong and Buzz Aldrin walked on the lunar surface while Michael Collins orbited above.</p>
 
-        <h3>Specifications and Facts:</h3>
+        <h3>Specifications:</h3>
         <div class="specifications">
-            <div><span><strong>Launch Date:</strong></span><span>July 16, 1969</span></div>
-            <div><span><strong>Landing Date:</strong></span><span>July 20, 1969</span></div>
-            <div><span><strong>Lunar Module:</strong></span><span>Eagle</span></div>
-            <div><span><strong>Command Module:</strong></span><span>Columbia</span></div>
-            <div><span><strong>Astronauts:</strong></span><span>Neil Armstrong, Buzz Aldrin, Michael Collins</span></div>
-            <div><span><strong>Moonwalk Duration:</strong></span><span>2 hours, 15 minutes</span></div>
-            <div><span><strong>Lunar Samples:</strong></span><span>21.5 kg</span></div>
+            <div><span><strong>Date:</strong></span><span>July 20, 1969</span></div><div><span><strong>Astronauts:</strong></span><span>Armstrong, Aldrin, Collins</span></div><div><span><strong>Landing Site:</strong></span><span>Sea of Tranquility</span></div>
         </div>
-        
+
         <h3>Image Gallery</h3>
         <div class="slider">
             <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
@@ -50,9 +36,14 @@
             <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
             <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
         </div>
-        
-        <h3>3D Model of Lunar Module</h3>
-        <model-viewer src="3d-placeholder.glb" alt="3D Model of Apollo 11 Lunar Module" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>3D Model</h3>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>Video</h3>
+        <div class="video-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">

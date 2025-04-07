@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STARSHIP – THE FUTURE OF SPACE TRAVEL (2020-PRESENT)</title>
+    <title>Starship – The Future of Space Travel</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="top-menu">
@@ -15,32 +17,17 @@
         <img src="logo.png" alt="Logo" class="logo">
     </div>
 
-    <div class="content">
-        <h2>STARSHIP – THE FUTURE OF SPACE TRAVEL (2020-PRESENT)</h2>
-        <img src="placeholder.png" alt="SpaceX Starship" onclick="openLightbox(this.src)">
-        <p>
-            <strong>Starship</strong> is SpaceX’s ambitious next-generation spacecraft, designed to be fully reusable. 
-            This revolutionary spacecraft aims to significantly lower the cost of space travel and make missions to Mars, the Moon, and beyond practical and affordable.
-        </p>
-        <p>
-            Starship is composed of two main parts: the Super Heavy booster and the Starship spacecraft itself. 
-            Both stages are designed to land vertically and be reused multiple times, dramatically reducing the cost per launch. 
-            With its stainless steel structure, the spacecraft can endure high temperatures during reentry, facilitating repeated use.
-        </p>
-        <p>
-            The ultimate goal of the Starship program is to establish a permanent human presence on Mars and to open the door to deep space exploration, enabling humanity to become multiplanetary.
-        </p>
-        
+    <div class="content dark-box">
+        <h2>Starship – The Future of Space Travel</h2>
+        <img src="photos/preview/us15.jpg" alt="Starship – The Future of Space Travel" onclick="openLightbox(this.src)">
+        <p>Starship is a fully reusable spacecraft being developed by SpaceX.</p>
+        <p>It aims to carry astronauts to Mars and beyond in future decades.</p>
+
         <h3>Specifications:</h3>
         <div class="specifications">
-            <div><span><strong>Total Height:</strong></span><span>120 m (394 ft)</span></div>
-            <div><span><strong>Diameter:</strong></span><span>9 m (30 ft)</span></div>
-            <div><span><strong>Payload to LEO:</strong></span><span>100-150 metric tons</span></div>
-            <div><span><strong>Material:</strong></span><span>Stainless Steel</span></div>
-            <div><span><strong>Reusability:</strong></span><span>Fully Reusable</span></div>
-            <div><span><strong>Planned Missions:</strong></span><span>Mars colonization, Lunar missions, Earth-orbit satellites, deep-space exploration</span></div>
+            <div><span><strong>Status:</strong></span><span>In development</span></div><div><span><strong>Payload:</strong></span><span>100,000+ kg</span></div>
         </div>
-        
+
         <h3>Image Gallery</h3>
         <div class="slider">
             <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
@@ -49,9 +36,14 @@
             <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
             <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
         </div>
-        
-        <h3>3D Model of Starship</h3>
-        <model-viewer src="3d-placeholder.glb" alt="3D Model of Starship" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>3D Model</h3>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>Video</h3>
+        <div class="video-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">

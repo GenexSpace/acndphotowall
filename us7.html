@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEW HORIZONS – FIRST PLUTO FLYBY (2015)</title>
+    <title>New Horizons – First Pluto Flyby (2015)</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="top-menu">
@@ -15,14 +17,16 @@
         <img src="logo.png" alt="Logo" class="logo">
     </div>
 
-    <div class="content">
-        <h2>NEW HORIZONS – FIRST PLUTO FLYBY (2015)</h2>
-        <img src="placeholder.png" alt="NEW HORIZONS – FIRST PLUTO FLYBY (2015)" onclick="openLightbox(this.src)">
-        <p>NASA's New Horizons spacecraft made its historic flyby of Pluto on July 14, 2015, capturing the first detailed images of the dwarf planet and its moons. It revealed unexpected geological activity, including ice mountains and a heart-shaped glacier called Sputnik Planitia.
+    <div class="content dark-box">
+        <h2>New Horizons – First Pluto Flyby (2015)</h2>
+        <img src="photos/preview/us7.jpg" alt="New Horizons – First Pluto Flyby (2015)" onclick="openLightbox(this.src)">
+        <p>New Horizons captured our first close-up images of Pluto in 2015.</p>
+        <p>It now travels into the Kuiper Belt, expanding our understanding of the solar system.</p>
 
-Launched in 2006, New Horizons traveled over 3 billion miles to reach Pluto, making it the fastest spacecraft ever launched. After its Pluto encounter, the mission was extended to explore other Kuiper Belt objects, such as Arrokoth in 2019.
-
-The mission dramatically changed our understanding of Pluto and the outer Solar System.</p>
+        <h3>Specifications:</h3>
+        <div class="specifications">
+            <div><span><strong>Launch:</strong></span><span>2006</span></div><div><span><strong>Flyby:</strong></span><span>2015</span></div><div><span><strong>Speed:</strong></span><span>14 km/s</span></div>
+        </div>
 
         <h3>Image Gallery</h3>
         <div class="slider">
@@ -34,7 +38,12 @@ The mission dramatically changed our understanding of Pluto and the outer Solar 
         </div>
 
         <h3>3D Model</h3>
-        <model-viewer src="3d-placeholder.glb" alt="3D Model of NEW HORIZONS – FIRST PLUTO FLYBY (2015)" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+        <model-viewer src="3d-placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+        <h3>Video</h3>
+        <div class="video-container">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">
