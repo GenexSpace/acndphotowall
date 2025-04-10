@@ -8,6 +8,7 @@
     <title>Explorer 1 – America’s First Satellite</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="assets/css/lightbox.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -34,14 +35,17 @@
 
         </div>
 
-        <h3>Image Gallery</h3>
-        <div class="slider">
-            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
-        </div>
+        
+<h3>Image Gallery</h3>
+<div class="slider">
+    <a href="photos/206621main_pic.jpg" data-lightbox="us-gallery" data-title="Gallery Image 1"><img src="photos/206621main_pic.jpg" alt="Gallery Image 1"></a>
+    <a href="photos/explorer1_1.jpg" data-lightbox="us-gallery" data-title="Gallery Image 2"><img src="photos/explorer1_1.jpg" alt="Gallery Image 2"></a>
+    <a href="photos/explorer1_2.jpg" data-lightbox="us-gallery" data-title="Gallery Image 3"><img src="photos/explorer1_2.jpg" alt="Gallery Image 3"></a>
+    <a href="photos/explorer1_3.jpg" data-lightbox="us-gallery" data-title="Gallery Image 4"><img src="photos/explorer1_3.jpg" alt="Gallery Image 4"></a>
+    <a href="photos/explorer1_4.jpg" data-lightbox="us-gallery" data-title="Gallery Image 5"><img src="photos/explorer1_4.jpg" alt="Gallery Image 5"></a>
+    <a href="photos/explorer1_5.jpg" data-lightbox="us-gallery" data-title="Gallery Image 5"><img src="photos/explorer1_5.jpg" alt="Gallery Image 5"></a>
+</div>
+
 
         <h3>3D Model</h3>
         <model-viewer src="3d/Explorer_1.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
@@ -52,23 +56,18 @@
         </div>
     </div>
 
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
-    </div>
-
     <div class="footer">
         <p>&copy; 2025 Genex Space</p>
     </div>
 
-    <script>
-        function openLightbox(src) {
-            document.getElementById("lightbox-img").src = src;
-            document.getElementById("lightbox").style.display = "flex";
-        }
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
+    
+<script src="assets/js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
 
 </body>
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>STL Viewer</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <script type="module">
+    import * as THREE from "https://unpkg.com/three@0.157.0/build/three.module.js";
+    import { OrbitControls } from "https://unpkg.com/three@0.157.0/examples/jsm/controls/OrbitControls.js";
+    import { STLLoader } from "https://unpkg.com/three@0.157.0/examples/jsm/loaders/STLLoader.js";
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xf5f5f5);
+
+    const camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.01, 100);
+    camera.position.set(3, 3, 3);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+
+    // Lights
+    const light = new THREE.DirectionalLight(0xffffff, 1);
+    light.position.set(5, 5, 5).normalize();
+    scene.add(light);
+
+    const ambient = new THREE.AmbientLight(0x404040);
+    scene.add(ambient);
+
+    // STL Loader
+    const loader = new STLLoader();
+    loader.load("./model.stl", function (geometry) {
+      const material = new THREE.MeshStandardMaterial({ color: 0x0077ff });
+      const mesh = new THREE.Mesh(geometry, material);
+      mesh.rotation.x = -Math.PI / 2;
+      scene.add(mesh);
+    });
+
+    window.addEventListener("resize", () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>

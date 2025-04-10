@@ -1,71 +1,70 @@
 
-<!DOCTYPE html>
-<html lang="en">
-
+    <!DOCTYPE html>
+    <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sally Ride – First American Woman in Space</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="assets/css/lightbox.css" rel="stylesheet" />
 </head>
 
-<body>
+    <body>
 
-    <div class="top-menu">
-        <a href="index.html">← Back to Home</a>
-        <img src="logo.png" alt="Logo" class="logo">
-    </div>
+        <div class="top-menu">
+            <a href="index.html">← Back to Home</a>
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
 
-    <div class="content dark-box">
-        <h2>Sally Ride – First American Woman in Space</h2>
-        <img src="photos/preview/us21.jpg" alt="Sally Ride – First American Woman in Space" onclick="openLightbox(this.src)">
-        <p>On June 18, 1983, Dr. Sally Ride became the first American woman in space aboard Space Shuttle Challenger’s STS-7 mission. A physicist and astronaut, Ride shattered gender barriers in the U.S. space program and became a national icon.</p>
-        <p>She flew on two space missions and later devoted herself to science education and outreach, founding Sally Ride Science to encourage young people, particularly girls, to pursue STEM careers.</p>
+        <div class="content dark-box">
+            <h2>Sally Ride – First American Woman in Space</h2>
+            <img src="photos/preview/us21.jpg" alt="Sally Ride – First American Woman in Space" onclick="openLightbox(this.src)">
+            <p>On June 18, 1983, Dr. Sally Ride became the first American woman in space aboard Space Shuttle Challenger’s STS-7 mission. A physicist and astronaut, Ride shattered gender barriers in the U.S. space program and became a national icon.</p>
+            <p>She flew on two space missions and later devoted herself to science education and outreach, founding Sally Ride Science to encourage young people, particularly girls, to pursue STEM careers.</p>
 
-        <h3>Specifications:</h3>
-        <div class="specifications">
-            
+            <h3>Specifications:</h3>
+            <div class="specifications">
+                
     <div><span><strong>Mission:</strong></span><span>STS-7</span></div>
     <div><span><strong>Date:</strong></span><span>June 18, 1983</span></div>
     
+            </div>
+
+            
+<h3>Image Gallery</h3>
+<div class="slider">
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 1"><img src="placeholder.png" alt="Gallery Image 1"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 2"><img src="placeholder.png" alt="Gallery Image 2"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 3"><img src="placeholder.png" alt="Gallery Image 3"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 4"><img src="placeholder.png" alt="Gallery Image 4"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 5"><img src="placeholder.png" alt="Gallery Image 5"></a>
+</div>
+
+
+            <h3>3D Model</h3>
+            <model-viewer src="3d/placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+            <h3>Video</h3>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
 
-        <h3>Image Gallery</h3>
-        <div class="slider">
-            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
+        <div class="footer">
+            <p>&copy; 2025 Genex Space</p>
         </div>
 
-        <h3>3D Model</h3>
-        <model-viewer src="3d/Explorer_1.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+        
+<script src="assets/js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
 
-        <h3>Video</h3>
-        <div class="video-container">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2025 Genex Space</p>
-    </div>
-
-    <script>
-        function openLightbox(src) {
-            document.getElementById("lightbox-img").src = src;
-            document.getElementById("lightbox").style.display = "flex";
-        }
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
-
-</body>
-</html>
+    </body>
+    </html>
+    

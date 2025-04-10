@@ -1,72 +1,71 @@
 
-<!DOCTYPE html>
-<html lang="en">
-
+    <!DOCTYPE html>
+    <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Horizons – First Pluto Flyby (2015)</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="assets/css/lightbox.css" rel="stylesheet" />
 </head>
 
-<body>
+    <body>
 
-    <div class="top-menu">
-        <a href="index.html">← Back to Home</a>
-        <img src="logo.png" alt="Logo" class="logo">
-    </div>
+        <div class="top-menu">
+            <a href="index.html">← Back to Home</a>
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
 
-    <div class="content dark-box">
-        <h2>New Horizons – First Pluto Flyby (2015)</h2>
-        <img src="photos/preview/us7.jpg" alt="New Horizons – First Pluto Flyby (2015)" onclick="openLightbox(this.src)">
-        <p>Launched on January 19, 2006, New Horizons is a NASA mission developed to perform the first reconnaissance of Pluto and its moons. The spacecraft completed its historic flyby of Pluto on July 14, 2015, providing humanity with its first close-up views of the dwarf planet’s complex surface features and atmosphere.</p>
-        <p>Following its primary mission, New Horizons continued its journey into the Kuiper Belt and successfully performed a flyby of the distant object Arrokoth in 2019. The spacecraft remains active and continues to send data back to Earth, expanding our understanding of the outer solar system.</p>
+        <div class="content dark-box">
+            <h2>New Horizons – First Pluto Flyby (2015)</h2>
+            <img src="photos/preview/us7.jpg" alt="New Horizons – First Pluto Flyby (2015)" onclick="openLightbox(this.src)">
+            <p>Launched on January 19, 2006, New Horizons is a NASA mission developed to perform the first reconnaissance of Pluto and its moons. The spacecraft completed its historic flyby of Pluto on July 14, 2015, providing humanity with its first close-up views of the dwarf planet’s complex surface features and atmosphere.</p>
+            <p>Following its primary mission, New Horizons continued its journey into the Kuiper Belt and successfully performed a flyby of the distant object Arrokoth in 2019. The spacecraft remains active and continues to send data back to Earth, expanding our understanding of the outer solar system.</p>
 
-        <h3>Specifications:</h3>
-        <div class="specifications">
-            
+            <h3>Specifications:</h3>
+            <div class="specifications">
+                
     <div><span><strong>Launch:</strong></span><span>2006</span></div>
     <div><span><strong>Pluto Flyby:</strong></span><span>2015</span></div>
     <div><span><strong>Kuiper Object:</strong></span><span>Arrokoth (2019)</span></div>
     
+            </div>
+
+            
+<h3>Image Gallery</h3>
+<div class="slider">
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 1"><img src="placeholder.png" alt="Gallery Image 1"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 2"><img src="placeholder.png" alt="Gallery Image 2"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 3"><img src="placeholder.png" alt="Gallery Image 3"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 4"><img src="placeholder.png" alt="Gallery Image 4"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 5"><img src="placeholder.png" alt="Gallery Image 5"></a>
+</div>
+
+
+            <h3>3D Model</h3>
+            <model-viewer src="3d/placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+            <h3>Video</h3>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
 
-        <h3>Image Gallery</h3>
-        <div class="slider">
-            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
+        <div class="footer">
+            <p>&copy; 2025 Genex Space</p>
         </div>
 
-        <h3>3D Model</h3>
-        <model-viewer src="3d/Explorer_1.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+        
+<script src="assets/js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
 
-        <h3>Video</h3>
-        <div class="video-container">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2025 Genex Space</p>
-    </div>
-
-    <script>
-        function openLightbox(src) {
-            document.getElementById("lightbox-img").src = src;
-            document.getElementById("lightbox").style.display = "flex";
-        }
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
-
-</body>
-</html>
+    </body>
+    </html>
+    

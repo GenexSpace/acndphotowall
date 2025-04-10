@@ -1,71 +1,70 @@
 
-<!DOCTYPE html>
-<html lang="en">
-
+    <!DOCTYPE html>
+    <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Man on the Moon – Apollo 12 (1969)</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="assets/css/lightbox.css" rel="stylesheet" />
 </head>
 
-<body>
+    <body>
 
-    <div class="top-menu">
-        <a href="index.html">← Back to Home</a>
-        <img src="logo.png" alt="Logo" class="logo">
-    </div>
+        <div class="top-menu">
+            <a href="index.html">← Back to Home</a>
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
 
-    <div class="content dark-box">
-        <h2>Man on the Moon – Apollo 12 (1969)</h2>
-        <img src="photos/preview/us17.jpg" alt="Man on the Moon – Apollo 12 (1969)" onclick="openLightbox(this.src)">
-        <p>Apollo 12 was the second crewed lunar landing mission, launched on November 14, 1969. Commanded by Charles 'Pete' Conrad with Alan L. Bean and Richard F. Gordon Jr., the crew successfully landed in the Ocean of Storms.</p>
-        <p>The mission proved the ability to achieve pinpoint landings and retrieved parts of Surveyor 3 for analysis. Apollo 12 expanded lunar science and demonstrated improvements in EVA and lunar surface operations.</p>
+        <div class="content dark-box">
+            <h2>Man on the Moon – Apollo 12 (1969)</h2>
+            <img src="photos/preview/us17.jpg" alt="Man on the Moon – Apollo 12 (1969)" onclick="openLightbox(this.src)">
+            <p>Apollo 12 was the second crewed lunar landing mission, launched on November 14, 1969. Commanded by Charles 'Pete' Conrad with Alan L. Bean and Richard F. Gordon Jr., the crew successfully landed in the Ocean of Storms.</p>
+            <p>The mission proved the ability to achieve pinpoint landings and retrieved parts of Surveyor 3 for analysis. Apollo 12 expanded lunar science and demonstrated improvements in EVA and lunar surface operations.</p>
 
-        <h3>Specifications:</h3>
-        <div class="specifications">
-            
+            <h3>Specifications:</h3>
+            <div class="specifications">
+                
     <div><span><strong>Launch:</strong></span><span>Nov 14, 1969</span></div>
     <div><span><strong>Landing Site:</strong></span><span>Ocean of Storms</span></div>
     
+            </div>
+
+            
+<h3>Image Gallery</h3>
+<div class="slider">
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 1"><img src="placeholder.png" alt="Gallery Image 1"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 2"><img src="placeholder.png" alt="Gallery Image 2"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 3"><img src="placeholder.png" alt="Gallery Image 3"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 4"><img src="placeholder.png" alt="Gallery Image 4"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 5"><img src="placeholder.png" alt="Gallery Image 5"></a>
+</div>
+
+
+            <h3>3D Model</h3>
+            <model-viewer src="3d/placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+            <h3>Video</h3>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
 
-        <h3>Image Gallery</h3>
-        <div class="slider">
-            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
+        <div class="footer">
+            <p>&copy; 2025 Genex Space</p>
         </div>
 
-        <h3>3D Model</h3>
-        <model-viewer src="3d/Explorer_1.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+        
+<script src="assets/js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
 
-        <h3>Video</h3>
-        <div class="video-container">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2025 Genex Space</p>
-    </div>
-
-    <script>
-        function openLightbox(src) {
-            document.getElementById("lightbox-img").src = src;
-            document.getElementById("lightbox").style.display = "flex";
-        }
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
-
-</body>
-</html>
+    </body>
+    </html>
+    

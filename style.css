@@ -22,6 +22,9 @@
         .logo {
             height: 40px;
         }
+        .content.dark-box > img{
+            max-width: 100%;
+        }
         .content {
             max-width: 800px;
             margin: 50px auto;
@@ -32,7 +35,6 @@
             text-align: left;
         }
         img {
-            max-width: 100%;
             border-radius: 5px;
             cursor: pointer;
         }

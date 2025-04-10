@@ -1,73 +1,78 @@
 
-<!DOCTYPE html>
-<html lang="en">
-
+    <!DOCTYPE html>
+    <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Shuttle Program (1981–2011)</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="assets/css/lightbox.css" rel="stylesheet" />
 </head>
 
-<body>
+    <body>
 
-    <div class="top-menu">
-        <a href="index.html">← Back to Home</a>
-        <img src="logo.png" alt="Logo" class="logo">
-    </div>
+        <div class="top-menu">
+            <a href="index.html">← Back to Home</a>
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
 
-    <div class="content dark-box">
-        <h2>Space Shuttle Program (1981–2011)</h2>
-        <img src="photos/preview/us4.jpg" alt="Space Shuttle Program (1981–2011)" onclick="openLightbox(this.src)">
-        <p>The International Space Station (ISS) is a habitable research laboratory that orbits Earth approximately every 90 minutes. Initiated in 1998 as a collaborative project between NASA, Roscosmos, ESA, JAXA, and CSA, the ISS represents the largest peacetime scientific collaboration in human history.</p>
-        <p>It serves as a unique platform for conducting experiments in biology, physics, astronomy, and other fields in microgravity. Continuously inhabited since November 2000, the ISS symbolizes international cooperation, innovation, and the future of human presence in space.</p>
+        <div class="content dark-box">
+            <h2>Space Shuttle Program (1981–2011)</h2>
+            <img src="photos/preview/us4.jpg" alt="Space Shuttle Program (1981–2011)" onclick="openLightbox(this.src)">
+            <p>NASA’s Space Shuttle program, officially known as the Space Transportation System (STS), was the world’s first reusable spacecraft system capable of carrying astronauts and cargo to low Earth orbit. The program began with the launch of Columbia on April 12, 1981. It included five orbiters: Columbia, Challenger, Discovery, Atlantis, and Endeavour.</p>
+            <p>Over the course of 135 missions, the Shuttle deployed satellites, conducted scientific research, and was instrumental in building and servicing the International Space Station (ISS) and the Hubble Space Telescope. Despite two tragic losses—Challenger in 1986 and Columbia in 2003—the Shuttle era remains a hallmark of human spaceflight and technological advancement.</p>
 
-        <h3>Specifications:</h3>
-        <div class="specifications">
-            
-    <div><span><strong>Orbit:</strong></span><span>~400 km altitude</span></div>
-    <div><span><strong>Modules:</strong></span><span>Over 15</span></div>
-    <div><span><strong>Inhabitants:</strong></span><span>6–7 crew</span></div>
-    <div><span><strong>Partners:</strong></span><span>NASA, Roscosmos, ESA, JAXA, CSA</span></div>
+            <h3>Specifications:</h3>
+            <div class="specifications">
+                
+    <div><span><strong>First Launch:</strong></span><span>April 12, 1981</span></div>
+    <div><span><strong>Last Launch:</strong></span><span>July 8, 2011</span></div>
+    <div><span><strong>Flights:</strong></span><span>135</span></div>
+    <div><span><strong>Orbit:</strong></span><span>Low Earth Orbit</span></div>
     
+            </div>
+
+            
+<h3>Image Gallery</h3>
+<div class="slider">
+    <a href="photos/Space_shuttles_Atlantis_(STS-125)_and_Endeavour_(STS-400)_on_launch_pads.jpg" data-lightbox="us-gallery" data-title="Space shuttle Atlantis (foreground) standing on Launch Pad A and Endeavour on Launch Pad B at NASA's Kennedy Space Center in Florida. At the left of each shuttle are the open rotating service structures with the payload changeout rooms revealed. The rotating service structures provide protection for weather and access to the shuttle.
+For the first time since July 2001, two shuttles are on the launch pads at the same time. Endeavour stands by at pad B in the unlikely event that a rescue mission is necessary during Atlantis' upcoming STS-125 mission to repair NASA's Hubble Space Telescope. The mission is slated to launch October 10 2008.
+
+After Endeavour is cleared from its duty as a rescue spacecraft, it will be moved to Launch Pad 39A for its STS-126 mission to the International Space Station. That flight is targeted for launch Nov. 12 2008"><img src="photos/Space_shuttles_Atlantis_(STS-125)_and_Endeavour_(STS-400)_on_launch_pads.jpg" alt="Space shuttle Atlantis (foreground) standing on Launch Pad A and Endeavour on Launch Pad B at NASA's Kennedy Space Center in Florida. At the left of each shuttle are the open rotating service structures with the payload changeout rooms revealed. The rotating service structures provide protection for weather and access to the shuttle.
+For the first time since July 2001, two shuttles are on the launch pads at the same time. Endeavour stands by at pad B in the unlikely event that a rescue mission is necessary during Atlantis' upcoming STS-125 mission to repair NASA's Hubble Space Telescope. The mission is slated to launch October 10 2008.
+
+After Endeavour is cleared from its duty as a rescue spacecraft, it will be moved to Launch Pad 39A for its STS-126 mission to the International Space Station. That flight is targeted for launch Nov. 12 2008"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 2"><img src="placeholder.png" alt="Gallery Image 2"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 3"><img src="placeholder.png" alt="Gallery Image 3"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 4"><img src="placeholder.png" alt="Gallery Image 4"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 5"><img src="placeholder.png" alt="Gallery Image 5"></a>
+</div>
+
+
+            <h3>3D Model</h3>
+            <model-viewer src="3d/Shuttle.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+            <h3>Video</h3>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/7_SNFrTr_oo" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
 
-        <h3>Image Gallery</h3>
-        <div class="slider">
-            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
+        <div class="footer">
+            <p>&copy; 2025 Genex Space</p>
         </div>
 
-        <h3>3D Model</h3>
-        <model-viewer src="3d/Explorer_1.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+        
+<script src="assets/js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
 
-        <h3>Video</h3>
-        <div class="video-container">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2025 Genex Space</p>
-    </div>
-
-    <script>
-        function openLightbox(src) {
-            document.getElementById("lightbox-img").src = src;
-            document.getElementById("lightbox").style.display = "flex";
-        }
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
-
-</body>
-</html>
+    </body>
+    </html>
+    

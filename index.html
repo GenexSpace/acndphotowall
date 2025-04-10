@@ -55,6 +55,20 @@
                 min-width: 180px;
             }
         }
+
+        .gallery-container {
+  cursor: grab;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* iOS smooth scrolling */
+}
+
+.gallery-container:active {
+  cursor: grabbing;
+}
+
+/* Remove scroll-behavior to avoid drag lag */
+
+
     </style>
 </head>
 <body>
@@ -131,4 +145,40 @@
         </div>
     </div>
 </body>
+
+<script>
+  document.querySelectorAll('.gallery-container').forEach(container => {
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+
+    const startDrag = (x) => {
+      isDragging = true;
+      startX = x - container.offsetLeft;
+      scrollLeft = container.scrollLeft;
+    };
+
+    const drag = (x) => {
+      if (!isDragging) return;
+      const walk = (x - container.offsetLeft - startX);
+      container.scrollLeft = scrollLeft - walk;
+    };
+
+    const endDrag = () => {
+      isDragging = false;
+    };
+
+    // Mouse Events
+    container.addEventListener('mousedown', e => startDrag(e.pageX));
+    container.addEventListener('mousemove', e => drag(e.pageX));
+    container.addEventListener('mouseup', endDrag);
+    container.addEventListener('mouseleave', endDrag);
+
+    // Touch Events
+    container.addEventListener('touchstart', e => startDrag(e.touches[0].pageX));
+    container.addEventListener('touchmove', e => drag(e.touches[0].pageX));
+    container.addEventListener('touchend', endDrag);
+  });
+</script>
+
 </html>

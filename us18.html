@@ -1,71 +1,70 @@
 
-<!DOCTYPE html>
-<html lang="en">
-
+    <!DOCTYPE html>
+    <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ham – The First Hominid in Space</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="assets/css/lightbox.css" rel="stylesheet" />
 </head>
 
-<body>
+    <body>
 
-    <div class="top-menu">
-        <a href="index.html">← Back to Home</a>
-        <img src="logo.png" alt="Logo" class="logo">
-    </div>
+        <div class="top-menu">
+            <a href="index.html">← Back to Home</a>
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
 
-    <div class="content dark-box">
-        <h2>Ham – The First Hominid in Space</h2>
-        <img src="photos/preview/us18.jpg" alt="Ham – The First Hominid in Space" onclick="openLightbox(this.src)">
-        <p>On January 31, 1961, a chimpanzee named Ham became the first hominid to travel to space aboard a Mercury-Redstone rocket. His 16.5-minute suborbital flight paved the way for human spaceflight by demonstrating survival and task performance in microgravity.</p>
-        <p>Ham’s successful mission confirmed that life-support systems and biological responses could endure spaceflight, directly influencing the decision to launch Alan Shepard a few months later.</p>
+        <div class="content dark-box">
+            <h2>Ham – The First Hominid in Space</h2>
+            <img src="photos/preview/us18.jpg" alt="Ham – The First Hominid in Space" onclick="openLightbox(this.src)">
+            <p>On January 31, 1961, a chimpanzee named Ham became the first hominid to travel to space aboard a Mercury-Redstone rocket. His 16.5-minute suborbital flight paved the way for human spaceflight by demonstrating survival and task performance in microgravity.</p>
+            <p>Ham’s successful mission confirmed that life-support systems and biological responses could endure spaceflight, directly influencing the decision to launch Alan Shepard a few months later.</p>
 
-        <h3>Specifications:</h3>
-        <div class="specifications">
-            
+            <h3>Specifications:</h3>
+            <div class="specifications">
+                
     <div><span><strong>Flight:</strong></span><span>Mercury-Redstone 2</span></div>
     <div><span><strong>Duration:</strong></span><span>16.5 min</span></div>
     
+            </div>
+
+            
+<h3>Image Gallery</h3>
+<div class="slider">
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 1"><img src="placeholder.png" alt="Gallery Image 1"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 2"><img src="placeholder.png" alt="Gallery Image 2"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 3"><img src="placeholder.png" alt="Gallery Image 3"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 4"><img src="placeholder.png" alt="Gallery Image 4"></a>
+    <a href="placeholder.png" data-lightbox="us-gallery" data-title="Gallery Image 5"><img src="placeholder.png" alt="Gallery Image 5"></a>
+</div>
+
+
+            <h3>3D Model</h3>
+            <model-viewer src="3d/placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+
+            <h3>Video</h3>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
 
-        <h3>Image Gallery</h3>
-        <div class="slider">
-            <img src="placeholder.png" alt="Gallery Image 1" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 2" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 3" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 4" onclick="openLightbox(this.src)">
-            <img src="placeholder.png" alt="Gallery Image 5" onclick="openLightbox(this.src)">
+        <div class="footer">
+            <p>&copy; 2025 Genex Space</p>
         </div>
 
-        <h3>3D Model</h3>
-        <model-viewer src="3d/Explorer_1.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+        
+<script src="assets/js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
 
-        <h3>Video</h3>
-        <div class="video-container">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2025 Genex Space</p>
-    </div>
-
-    <script>
-        function openLightbox(src) {
-            document.getElementById("lightbox-img").src = src;
-            document.getElementById("lightbox").style.display = "flex";
-        }
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
-
-</body>
-</html>
+    </body>
+    </html>
+    
