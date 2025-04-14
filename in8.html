@@ -1,67 +1,62 @@
-
-    <!DOCTYPE html>
-    <html lang="en">
-    
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>SpaDeX – Docking in Space (Upcoming)</title>
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaDeX – Docking in Space</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/css/lightbox.css" rel="stylesheet" />
 </head>
-
-    <body>
-
-        <div class="top-menu">
-            <a href="index.html">← Back to Home</a>
-            <img src="logo.png" alt="Logo" class="logo">
-        </div>
-
-        <div class="content dark-box">
-            <h2>SpaDeX – Docking in Space (Upcoming)</h2>
-            <img src="photos/preview/in8.jpg" alt="SpaDeX – Docking in Space (Upcoming)">
-            <p>SpaDeX, or Space Docking Experiment, is a forthcoming ISRO mission to demonstrate autonomous docking capability in orbit. It involves launching two spacecraft that will perform controlled maneuvers and dock with each other in space.</p>
-            <p>The success of SpaDeX will enable future applications such as satellite refueling, orbital servicing, and modular space station development, reinforcing India's position in advanced orbital technologies.</p>
-
-            <h3>Specifications:</h3>
-            <div class="specifications">
-                
-    <div><span><strong>Mission Type:</strong></span><span>Technology Demonstration</span></div>
-    <div><span><strong>Status:</strong></span><span>Planned</span></div>
-    <div><span><strong>Capabilities:</strong></span><span>Docking, Formation Flying</span></div>
-    
-            </div>
-
-            
-<h3>Photo Gallery</h3>
-<div class="gallery">
-    <a href="photos/in1_1.jpg" data-lightbox="gallery" data-title="Image 1"><img src="photos/in1_1.jpg" alt="Gallery Image 1" /></a>
-    <a href="photos/in1_2.jpg" data-lightbox="gallery" data-title="Image 2"><img src="photos/in1_2.jpg" alt="Gallery Image 2" /></a>
+<body>
+<div class="top-menu">
+    <a href="index.html">← Back to Home</a>
+    <img src="logo.png" alt="Logo" class="logo">
 </div>
+<div class="content dark-box">
+<h2>SpaDeX – Docking in Space</h2>
+<img src="photos/preview/in8.jpg" alt="SpaDeX – Docking in Space" onclick="openLightbox(this.src)">
+<p>SpaDeX (Space Docking Experiment) is an ISRO mission under development to demonstrate autonomous docking, proximity operations, and formation flying in space. The mission consists of twin satellites that will approach each other, hold relative position, and attempt a dock under full autonomous control.</p>
+<p>This mission is critical for future human spaceflight, satellite servicing, and space station development. SpaDeX will validate rendezvous sensors, relative navigation algorithms, and docking mechanisms developed indigenously.</p>
+<h3>Specifications:</h3>
+<div class="specifications">
+<div><span><strong>Mission Type:</strong></span><span>Technology Demonstration</span></div>
+<div><span><strong>Configuration:</strong></span><span>Twin autonomous spacecraft</span></div>
+<div><span><strong>Objective:</strong></span><span>Demonstrate docking, formation flying, proximity ops</span></div>
+<div><span><strong>Applications:</strong></span><span>ISRO human spaceflight, satellite servicing</span></div>
+<div><span><strong>Development Status:</strong></span><span>Under integration/testing</span></div>
+</div>
+<h3>Image Gallery</h3>
+<div class="slider">
+
+<a href="photos/Indian Missions/SpaDeX/Images/SpaDeX_1.webp" data-lightbox="in-gallery" data-title="Gallery Image 1"><img src="photos/Indian Missions/SpaDeX/Images/SpaDeX_1.webp" alt="Gallery Image 1"></a>
 
 
-            <h3>3D Model</h3>
-            <model-viewer src="3d/placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+<a href="photos/Indian Missions/SpaDeX/Images/SpaDeX_2.webp" data-lightbox="in-gallery" data-title="Gallery Image 2"><img src="photos/Indian Missions/SpaDeX/Images/SpaDeX_2.webp" alt="Gallery Image 2"></a>
 
-            <h3>Video</h3>
-            <div class="video-container">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
 
-        <div class="footer">
-            <p>&copy; 2025 Genex Space</p>
-        </div>
+<a href="photos/Indian Missions/SpaDeX/Images/SpaDeX_3.webp" data-lightbox="in-gallery" data-title="Gallery Image 3"><img src="photos/Indian Missions/SpaDeX/Images/SpaDeX_3.webp" alt="Gallery Image 3"></a>
 
-        
+
+<a href="photos/Indian Missions/SpaDeX/Images/SpaDeX_4.webp" data-lightbox="in-gallery" data-title="Gallery Image 4"><img src="photos/Indian Missions/SpaDeX/Images/SpaDeX_4.webp" alt="Gallery Image 4"></a>
+
+
+<a href="photos/Indian Missions/SpaDeX/Images/SpaDeX_5.webp" data-lightbox="in-gallery" data-title="Gallery Image 5"><img src="photos/Indian Missions/SpaDeX/Images/SpaDeX_5.webp" alt="Gallery Image 5"></a>
+
+</div>
+<h3>3D Model</h3>
+<model-viewer src="3d/in8.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+<h3>Video</h3>
+<div class="video-container">
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="footer">
+<p>&copy; 2025 Genex Space</p>
+</div>
 <script src="assets/js/lightbox-plus-jquery.js"></script>
 <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
+    lightbox.option({'resizeDuration': 200, 'wrapAround': true})
 </script>
-
-    </body>
-    </html>
-    
+</body>
+</html>

@@ -1,67 +1,63 @@
-
-    <!DOCTYPE html>
-    <html lang="en">
-    
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartosat – Advancing Earth Observation</title>
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/css/lightbox.css" rel="stylesheet" />
 </head>
-
-    <body>
-
-        <div class="top-menu">
-            <a href="index.html">← Back to Home</a>
-            <img src="logo.png" alt="Logo" class="logo">
-        </div>
-
-        <div class="content dark-box">
-            <h2>Cartosat – Advancing Earth Observation</h2>
-            <img src="photos/preview/in6.jpg" alt="Cartosat – Advancing Earth Observation">
-            <p>Cartosat satellites are a series of high-resolution Earth observation satellites used primarily for cartographic applications. They have been instrumental in rural and urban planning, road network monitoring, and border surveillance.</p>
-            <p>With capabilities reaching sub-meter spatial resolution, Cartosat satellites provide stereoscopic imagery and are integral to India’s defense and civilian imaging requirements. The series continues to evolve with Cartosat-3 having advanced optical sensors and agility.</p>
-
-            <h3>Specifications:</h3>
-            <div class="specifications">
-                
-    <div><span><strong>Orbit:</strong></span><span>Sun-synchronous Orbit</span></div>
-    <div><span><strong>Resolution:</strong></span><span>0.25–1 m (Cartosat-3)</span></div>
-    <div><span><strong>Use:</strong></span><span>Mapping, Urban Planning</span></div>
-    
-            </div>
-
-            
-<h3>Photo Gallery</h3>
-<div class="gallery">
-    <a href="photos/in1_1.jpg" data-lightbox="gallery" data-title="Image 1"><img src="photos/in1_1.jpg" alt="Gallery Image 1" /></a>
-    <a href="photos/in1_2.jpg" data-lightbox="gallery" data-title="Image 2"><img src="photos/in1_2.jpg" alt="Gallery Image 2" /></a>
+<body>
+<div class="top-menu">
+    <a href="index.html">← Back to Home</a>
+    <img src="logo.png" alt="Logo" class="logo">
 </div>
+<div class="content dark-box">
+<h2>Cartosat – Advancing Earth Observation</h2>
+<img src="photos/preview/in6.jpg" alt="Cartosat – Advancing Earth Observation" onclick="openLightbox(this.src)">
+<p>The Cartosat series consists of Earth observation satellites developed by ISRO for cartographic applications, urban and rural planning, and infrastructure development. Equipped with high-resolution panchromatic and multispectral cameras, these satellites provide detailed imagery that supports environmental monitoring and disaster management.</p>
+<p>Since 2005, several Cartosat satellites have been launched, each improving spatial resolution and imaging frequency. The data from Cartosat is extensively used in defense, agriculture, water resource management, and topographic mapping.</p>
+<h3>Specifications:</h3>
+<div class="specifications">
+<div><span><strong>First Launch:</strong></span><span>May 5, 2005</span></div>
+<div><span><strong>Latest Satellite:</strong></span><span>Cartosat-3 (November 27, 2019)</span></div>
+<div><span><strong>Orbit:</strong></span><span>Sun-Synchronous Polar Orbit (~500–650 km)</span></div>
+<div><span><strong>Payload:</strong></span><span>Panchromatic and Multispectral Cameras</span></div>
+<div><span><strong>Resolution:</strong></span><span>Up to 0.25 m (Cartosat-3)</span></div>
+<div><span><strong>Application:</strong></span><span>Cartography, disaster management, urban planning</span></div>
+</div>
+<h3>Image Gallery</h3>
+<div class="slider">
+
+<a href="photos/Indian Missions/Cartosat/Images/Cartosat_1.webp" data-lightbox="in-gallery" data-title="Gallery Image 1"><img src="photos/Indian Missions/Cartosat/Images/Cartosat_1.webp" alt="Gallery Image 1"></a>
 
 
-            <h3>3D Model</h3>
-            <model-viewer src="3d/placeholder.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+<a href="photos/Indian Missions/Cartosat/Images/Cartosat_2.webp" data-lightbox="in-gallery" data-title="Gallery Image 2"><img src="photos/Indian Missions/Cartosat/Images/Cartosat_2.webp" alt="Gallery Image 2"></a>
 
-            <h3>Video</h3>
-            <div class="video-container">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
 
-        <div class="footer">
-            <p>&copy; 2025 Genex Space</p>
-        </div>
+<a href="photos/Indian Missions/Cartosat/Images/Cartosat_3.webp" data-lightbox="in-gallery" data-title="Gallery Image 3"><img src="photos/Indian Missions/Cartosat/Images/Cartosat_3.webp" alt="Gallery Image 3"></a>
 
-        
+
+<a href="photos/Indian Missions/Cartosat/Images/Cartosat_4.webp" data-lightbox="in-gallery" data-title="Gallery Image 4"><img src="photos/Indian Missions/Cartosat/Images/Cartosat_4.webp" alt="Gallery Image 4"></a>
+
+
+<a href="photos/Indian Missions/Cartosat/Images/Cartosat_5.webp" data-lightbox="in-gallery" data-title="Gallery Image 5"><img src="photos/Indian Missions/Cartosat/Images/Cartosat_5.webp" alt="Gallery Image 5"></a>
+
+</div>
+<h3>3D Model</h3>
+<model-viewer src="3d/in6.glb" alt="3D Model" auto-rotate camera-controls touch-action="pan-y" background-color="#1e1e1e"></model-viewer>
+<h3>Video</h3>
+<div class="video-container">
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="footer">
+<p>&copy; 2025 Genex Space</p>
+</div>
 <script src="assets/js/lightbox-plus-jquery.js"></script>
 <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
+    lightbox.option({'resizeDuration': 200, 'wrapAround': true})
 </script>
-
-    </body>
-    </html>
-    
+</body>
+</html>
